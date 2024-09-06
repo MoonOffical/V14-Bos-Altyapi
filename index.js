@@ -64,18 +64,10 @@ client.aliases = new Collection();
 
 client.on('ready', () => {
 
-    // Oynuyor Kısmı
+    client.user.setPresence({ activities: [{ name: 'moon.offical' }] });
 
-    client.user.setPresence({ activities: [{ name: '🚀 Sponsor oksitweb.com' }] });
-
-
-    console.log('_________________________________________');
-    console.log(`Kullanıcı İsmi     : ${client.user.username}`);
-    console.log(`Sunucular          : ${client.guilds.cache.size}`);
-    console.log(`Kullanıcılar       : ${client.users.cache.size}`);
-    console.log(`Prefix             : ${ayarlar.prefix}`);
-    console.log(`Durum              : Bot Çevrimiçi!`);
-    console.log('_________________________________________');
+    console.log(`Prefix: ${ayarlar.prefix}`);
+    console.log(`Bot Aktif!`);
 });
 
 fs.readdir("./komutlar/GENEL", (err, files) => {
