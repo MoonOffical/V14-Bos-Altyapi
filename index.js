@@ -4,7 +4,6 @@ const ayarlar = require("./ayarlar.js");
 const { prefix, color } = require("./ayarlar.js")
 const db = require("croxydb")
 const Discord = require("discord.js")
-const discordTranscripts = require('discord-html-transcripts');
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
